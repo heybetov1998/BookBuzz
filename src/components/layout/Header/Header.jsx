@@ -6,13 +6,10 @@ const Header = () => {
     return (
         <header className={styles.headerComponent}>
             <div className="container">
-                <div className="row">
-                    <div className="col-md-6">
-                        <SearchInput />
-                    </div>
-                    <div className="col-md-6">
-                        <Nav />
-                    </div>
+                <div className="d-flex align-items-center">
+                    <h1>BookBuzz</h1>
+                    <SearchInput />
+                    <Nav />
                 </div>
             </div>
         </header>
