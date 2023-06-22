@@ -1,1 +1,6 @@
 @use "./variables" as glob;
+
+@mixin seperator($direction: top, $padding: 1rem) {
+    border-#{$direction}: 1px solid glob.$borderColor;
+    padding: $padding 0;
+}
