@@ -1,0 +1,17 @@
+.navComponent {
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 2rem;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
