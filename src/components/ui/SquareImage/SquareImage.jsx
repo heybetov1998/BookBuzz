@@ -1,9 +1,9 @@
 import styles from "./SquareImage.module.scss";
 import dog from "../../../assets/images/dog_pp.jpg";
 
-const SquareImage = () => {
+const SquareImage = ({ className }) => {
     return (
-        <div className={styles.squareImage}>
+        <div className={`${styles.squareImage} ${className}`}>
             <img src={dog} alt="dog" />
         </div>
     );
