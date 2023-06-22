@@ -4,7 +4,7 @@ import Products from "./pages/Products/products";
 import ProductDetails from "./pages/productDetails";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/notFound";
-import MainLayout from "./layouts/MainLayout";
+import MainLayout from "./layouts/MainLayout/MainLayout";
 
 function App() {
     return (
