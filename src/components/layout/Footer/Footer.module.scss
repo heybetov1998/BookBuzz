@@ -1,0 +1,23 @@
+@use "../../../global/global.scss" as glob;
+
+.footerComponent {
+    @include glob.seperator(top, 3rem);
+
+    ul {
+        list-style: none;
+        @extend %margin-padding-zero;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 24px;
+            color: glob.$blackText;
+            @extend %margin-padding-zero;
+        }
+
+        a {
+            text-decoration: none;
+            color: glob.$darkText;
+        }
+    }
+}

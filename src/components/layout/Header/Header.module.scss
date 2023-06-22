@@ -1,0 +1,10 @@
+@use "../../../global/global.scss" as glob;
+
+.headerComponent {
+    @include glob.seperator(bottom, 1rem);
+
+    h1 {
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+    }
+}

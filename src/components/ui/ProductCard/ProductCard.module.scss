@@ -1,0 +1,21 @@
+@use "../../../global/global.scss" as glob;
+
+.productCard {
+    background-color: glob.$cardBackground;
+    padding: 0 1rem 1rem;
+    border-radius: glob.$borderRadius;
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem 0;
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .body {
+        
+    }
+}

@@ -1,0 +1,32 @@
+@use "../../../global/global.scss" as glob;
+
+.searchInput {
+    border: 1px solid glob.$borderColor;
+    border-radius: glob.$borderRadius;
+
+    & * {
+        border: none;
+        background-color: transparent;
+
+        &:focus {
+            background-color: inherit;
+            box-shadow: none;
+        }
+    }
+
+    input {
+        padding: 10px 8px;
+    }
+
+    .inputIcon {
+        cursor: pointer;
+
+        span {
+            height: 100%;
+
+            img {
+                width: 15px;
+            }
+        }
+    }
+}

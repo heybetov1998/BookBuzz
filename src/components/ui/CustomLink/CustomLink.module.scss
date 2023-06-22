@@ -1,0 +1,16 @@
+@use "../../../global/variables.scss" as variables;
+
+.customLink {
+    display: inline-block;
+    border-radius: variables.$borderRadius;
+    padding: 10px 24px;
+    background-color: variables.$buttonBackgroundColor;
+    text-decoration: none;
+    color: variables.$lightColor;
+    font-weight: 500;
+
+    &.lightLink {
+        color: variables.$buttonBackgroundColor;
+        background-color: variables.$lightColor;
+    }
+}
