@@ -1,8 +1,8 @@
-@use "../../../global/variables.scss" as variables;
+@use "../../../global/global.scss" as glob;
 
 .searchInput {
-    border: 1px solid variables.$borderColor;
-    border-radius: variables.$borderRadius;
+    border: 1px solid glob.$borderColor;
+    border-radius: glob.$borderRadius;
 
     & * {
         border: none;

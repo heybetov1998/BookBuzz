@@ -1,0 +1,17 @@
+@use "./variables" as glob;
+
+%seperator {
+    padding: 1rem 0;
+}
+
+%seperator-bottom {
+    @extend %seperator;
+
+    border-bottom: 1px solid glob.$borderColor;
+}
+
+%seperator-top {
+    @extend %seperator;
+
+    border-top: 1px solid glob.$borderColor;
+}

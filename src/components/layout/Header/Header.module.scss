@@ -1,8 +1,7 @@
-@use "../../../global/variables.scss" as variables;
+@use "../../../global/global.scss" as glob;
 
 .headerComponent {
-    border-bottom: 1px solid variables.$borderColor;
-    padding: 1rem 0;
+    @extend %seperator-bottom;
 
     h1 {
         margin-right: 1.5rem;

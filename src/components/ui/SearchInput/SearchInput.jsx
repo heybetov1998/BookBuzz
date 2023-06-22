@@ -1,4 +1,3 @@
-import "../../../global/variables.scss"
 import styles from "./SearchInput.module.scss";
 import searchIcon from "../../../assets/images/search_icon.svg";
 
