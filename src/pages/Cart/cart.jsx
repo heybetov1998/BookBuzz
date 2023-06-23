@@ -1,4 +1,5 @@
 import CartItem from "../../components/ui/CartItem/CartItem";
+import CheckoutCard from "../../components/ui/CheckoutCard/CheckoutCard";
 import styles from "./cart.module.scss";
 
 const Cart = () => {
@@ -13,7 +14,11 @@ const Cart = () => {
                         <CartItem />
                         <CartItem />
                     </div>
-                    <div className="col-md-4"></div>
+                    <div className="col-md-4">
+                        <div className="d-flex align-items-end h-100">
+                            <CheckoutCard />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
