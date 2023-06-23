@@ -1,7 +1,10 @@
 @use "../../../global/global.scss" as glob;
 
-.checkoutCard {
+.checkoutCart {
     background-color: glob.$cardBackground;
+    width: 100%;
+    padding: 1rem;
+    border-radius: glob.$borderRadius;
 
     .header {
         .title {
