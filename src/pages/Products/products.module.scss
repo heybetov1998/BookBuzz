@@ -1,5 +1,7 @@
+@use "../../global/global.scss" as glob;
+
 .productsPage {
-    padding: 2rem 0;
+    @extend %section-padding-y;
 
     .sectionName {
         font-weight: 700;
