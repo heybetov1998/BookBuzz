@@ -1,0 +1,21 @@
+@use "../../../global/global.scss" as glob;
+
+.checkoutCard {
+    background-color: glob.$cardBackground;
+
+    .header {
+        .title {
+            font-weight: 700;
+        }
+    }
+
+    .body {
+        .box {
+            margin: 1rem 0;
+            border-top: 1px solid glob.$borderColor;
+        }
+    }
+
+    .footer {
+    }
+}
