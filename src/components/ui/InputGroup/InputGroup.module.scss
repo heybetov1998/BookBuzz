@@ -1,0 +1,28 @@
+@use "../../../global/global.scss" as glob;
+
+.inputGroup {
+    border: 1px solid glob.$borderColor;
+    border-radius: glob.$borderRadius;
+
+    & * {
+        border: none;
+        background-color: transparent;
+
+        &:focus {
+            background-color: inherit;
+            box-shadow: none;
+        }
+    }
+
+    input {
+        padding: 10px 16px;
+    }
+
+    .inputIcon {
+        cursor: pointer;
+        padding-right: 16px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+}
