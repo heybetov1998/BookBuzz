@@ -4,8 +4,6 @@
     @extend %section-padding-y;
 
     .sectionName {
-        font-weight: 700;
-        font-size: 1.8rem;
-        margin-bottom: 3rem;
+        @extend %section-name;
     }
 }
