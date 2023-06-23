@@ -1,0 +1,9 @@
+@use "../../global/global.scss" as glob;
+
+.cartPage {
+    @extend %section-padding-y;
+
+    .sectionName {
+        @extend %section-name;
+    }
+}
