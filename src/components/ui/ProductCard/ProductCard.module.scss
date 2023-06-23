@@ -16,6 +16,36 @@
     }
 
     .body {
-        
+        .image {
+            margin-bottom: 1rem;
+        }
+        .title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .description {
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer {
+        text-align: right;
+
+        .like {
+            color: glob.$blackText;
+            display: inline-block;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.8rem;
+            background-color: glob.$lightBackgroundColor;
+            border-radius: glob.$borderRadius;
+            user-select: none;
+            cursor: pointer;
+
+            .heart {
+                font-size: 0.7rem;
+                margin-right: 0.3rem;
+            }
+        }
     }
 }
