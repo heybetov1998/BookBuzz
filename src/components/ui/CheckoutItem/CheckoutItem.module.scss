@@ -1,0 +1,32 @@
+.checkoutItem {
+    padding-top: 1rem;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        .title,
+        .boldTitle {
+            font-size: 1.1rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .boldTitle {
+            font-weight: 700;
+        }
+
+        .price,
+        .boldPrice {
+            display: inline-block;
+        }
+
+        .boldPrice {
+            font-weight: 700;
+        }
+    }
+
+    .quantity {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+}

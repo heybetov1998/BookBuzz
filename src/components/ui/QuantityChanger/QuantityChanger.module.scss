@@ -1,0 +1,29 @@
+@use "../../../global/global.scss" as glob;
+
+.quantityChanger {
+    user-select: none;
+    background-color: glob.$buttonBackgroundColor;
+    color: glob.$lightColor;
+    border-radius: glob.$borderRadius;
+    padding: 0.8rem 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    .quantity {
+        display: inline-block;
+        margin: 0 0.8rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: glob.$buttonDarkSecondary;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
