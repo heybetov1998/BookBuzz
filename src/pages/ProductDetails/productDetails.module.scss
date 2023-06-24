@@ -1,5 +1,14 @@
 @use "../../global/global.scss" as glob;
 
-.productDetailsPage{
-    
+.productDetailsPage {
+    @extend %section-padding-y;
+
+    .sectionName {
+        @extend %section-name;
+        margin-bottom: 1rem;
+    }
+
+    .info {
+        margin: 2rem 0;
+    }
 }
