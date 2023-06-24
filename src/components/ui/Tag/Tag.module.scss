@@ -1,0 +1,13 @@
+@use "../../../global/global.scss" as glob;
+
+.tag {
+    @include glob.buttonComponent(0.1rem 1.2rem);
+    display: inline-block;
+    user-select: none;
+    margin-right: 0.4rem;
+    font-size: 0.9rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

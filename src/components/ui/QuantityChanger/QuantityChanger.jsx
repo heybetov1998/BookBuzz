@@ -1,9 +1,9 @@
 import styles from "./QuantityChanger.module.scss";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
-const QuantityChanger = ({ className }) => {
+const QuantityChanger = ({ className = "" }) => {
     return (
-        <div className={`${styles.quantityChanger} ${className ?? ""}`}>
+        <div className={`${styles.quantityChanger} ${className}`}>
             <span className={styles.button}>
                 <FaMinus />
             </span>
