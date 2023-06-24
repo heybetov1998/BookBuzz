@@ -6,4 +6,9 @@
     .sectionName {
         @extend %section-name;
     }
+
+    .cardLink {
+        color: inherit;
+        text-decoration: none;
+    }
 }
