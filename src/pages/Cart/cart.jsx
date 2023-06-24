@@ -15,8 +15,7 @@ const Cart = () => {
             </h1>
         );
 
-    if (loading)
-        return <h1 className="my-5 text-center">Loading...</h1>;
+    if (loading) return <h1 className="my-5 text-center">Loading...</h1>;
 
     if (data)
         return (
@@ -42,11 +41,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-// MySwal.fire({
-//     icon: "success",
-//     title: "Success!",
-//     text: "Order was placed successfully and will be delivered in 3-5 business days",
-//     confirmButtonColor: "#030303",
-//     confirmButtonText: "Dismiss",
-// });
