@@ -8,23 +8,18 @@ import MainLayout from "./layouts/MainLayout/MainLayout";
 
 function App() {
     return (
-        <>
-            <Routes>
-                <Route element={<MainLayout />}>
-                    <Route
-                        path="/"
-                        element={<Navigate to="/products" replace />}
-                    />
-                    <Route path="/products">
-                        <Route index element={<Products />} />
-                        <Route path=":id" element={<ProductDetails />} />
-                    </Route>
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="*" element={<NotFound />} />
+        <Routes>
+            <Route element={<MainLayout />}>
+                <Route path="/" element={<Navigate to="/products" replace />} />
+                <Route path="/products">
+                    <Route index element={<Products />} />
+                    <Route path=":id" element={<ProductDetails />} />
                 </Route>
-            </Routes>
-        </>
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="*" element={<NotFound />} />
+            </Route>
+        </Routes>
     );
 }
 

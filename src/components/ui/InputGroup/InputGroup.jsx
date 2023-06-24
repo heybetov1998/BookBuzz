@@ -12,7 +12,7 @@ const InputGroup = ({
     return (
         <div className={`${className}`}>
             {label && (
-                <label for={id} className="form-label">
+                <label htmlFor={id} className="form-label">
                     {label}
                 </label>
             )}
