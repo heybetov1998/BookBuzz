@@ -1,19 +1,21 @@
-import { FaEnvelope, FaEye, FaEyeSlash } from "react-icons/fa6";
 import styles from "./InputGroup.module.scss";
 
 const InputGroup = ({
     id = "defaultId",
-    helpText = "Something is incorrect",
-    label = "Label name",
-    needHelp = false,
     type = "text",
     placeholder = "",
+    helpText,
+    label,
+    className = "",
+    icon,
 }) => {
     return (
-        <div className="mb-3">
-            <label for={id} className="form-label">
-                {label}
-            </label>
+        <div className={`${className}`}>
+            {label && (
+                <label for={id} className="form-label">
+                    {label}
+                </label>
+            )}
 
             <div className={`input-group ${styles.inputGroup}`}>
                 <input
@@ -24,21 +26,14 @@ const InputGroup = ({
                     aria-describedby={`${id}Help`}
                 />
 
-                {type == "email" && (
+                {icon && (
                     <div className={`input-group-append ${styles.inputIcon}`}>
-                        <FaEnvelope />
-                    </div>
-                )}
-
-                {type == "password" && (
-                    <div className={`input-group-append ${styles.inputIcon}`}>
-                        <FaEye />
-                        <FaEyeSlash />
+                        {icon}
                     </div>
                 )}
             </div>
 
-            {needHelp && (
+            {helpText && (
                 <div id={`${id}Help`} className="form-text text-danger">
                     {helpText}
                 </div>
