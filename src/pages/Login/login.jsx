@@ -2,6 +2,7 @@ import styles from "./login.module.scss";
 import woman from "../../assets/images/woman_relax.svg";
 import InputGroup from "../../components/ui/InputGroup/InputGroup";
 import Button from "../../components/ui/Button/Button";
+import { FaEnvelope, FaEye } from "react-icons/fa6";
 
 const Login = () => {
     return (
@@ -15,14 +16,18 @@ const Login = () => {
                         <h1>Log In</h1>
                         <form className={styles.loginForm}>
                             <InputGroup
+                                className="mb-4"
                                 label="Email"
                                 type="email"
                                 placeholder="Enter your email"
+                                icon={<FaEnvelope />}
                             />
                             <InputGroup
+                                className="mb-4"
                                 label="Password"
                                 type="password"
                                 placeholder="Enter your password"
+                                icon={<FaEye />}
                             />
                             <Button className="w-100 mt-3">Log In</Button>
                         </form>

@@ -1,22 +1,14 @@
-import styles from "./SearchInput.module.scss";
-import searchIcon from "../../../assets/images/search_icon.svg";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import InputGroup from "../InputGroup/InputGroup";
 
 const SearchInput = () => {
     return (
-        <>
-            <div className={`input-group ${styles.searchInput}`}>
-                <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Search for books by title, author, or ISBN"
-                />
-                <div className={`input-group-append ${styles.inputIcon}`}>
-                    <span className="input-group-text">
-                        <img src={searchIcon} alt="search icon" />
-                    </span>
-                </div>
-            </div>
-        </>
+        <form className="w-100">
+            <InputGroup
+                placeholder="Search for books by title, author, or ISBN"
+                icon={<FaMagnifyingGlass />}
+            />
+        </form>
     );
 };
 
