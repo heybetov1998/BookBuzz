@@ -3,12 +3,43 @@
 .productDetailsPage {
     @extend %section-padding-y;
 
-    .sectionName {
-        @extend %section-name;
-        margin-bottom: 1rem;
+    .gallery {
+        .main {
+            margin-bottom: 1.5rem;
+        }
+
+        .others {
+        
+        }
     }
 
-    .info {
-        margin: 2rem 0;
+    .product {
+        .sectionName {
+            @extend %section-name;
+            margin-bottom: 1rem;
+        }
+
+        .info {
+            margin: 2rem 0;
+        }
+
+        .quantityPrice {
+            display: flex;
+            justify-content: space-between;
+
+            .quantity {
+                .inStock {
+                    margin-top: 0.2rem;
+                }
+            }
+
+            .price {
+                font-size: 2rem;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }
