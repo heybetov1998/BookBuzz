@@ -1,0 +1,22 @@
+@use "../../../global/global.scss" as glob;
+
+.infoComponent {
+    margin-right: 3rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .text {
+        font-weight: 700;
+        margin-left: 0.6rem;
+    }
+}
