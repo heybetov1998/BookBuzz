@@ -6,12 +6,19 @@ import { FaEnvelope, FaEye } from "react-icons/fa6";
 import useFetch from "../../hooks/useFetch";
 
 const url = "http://bookbuzz.cronhex.com/api/v1/account/login";
+
+const json = {
+    email: "bob@bob.xyz",
+    password: "n0rM@N!",
+};
+
 const options = {
+    mode: "no-cors",
     method: "POST",
     headers: {
         "Content-Type": "application/json",
     },
-    body: JSON.stringify({ email: "bob@bob.xyz", password: "n0rM@N!" }),
+    body: JSON.stringify(json),
 };
 
 const Login = () => {
