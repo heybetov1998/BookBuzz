@@ -12,12 +12,15 @@ const useFetch = (url, options) => {
             let data = null;
 
             if (options)
-                data = await fetch(url, options)
+                data = await fetch(
+                    `https://cors-anywhere.herokuapp.com/${url}`,
+                    options
+                )
                     .then((response) => response.json())
                     .catch((err) => setError(err))
                     .finally(() => setLoading(false));
             else
-                data = await fetch(url)
+                data = await fetch(`https://cors-anywhere.herokuapp.com/${url}`)
                     .then((response) => response.json())
                     .catch((err) => setError(err))
                     .finally(() => setLoading(false));
