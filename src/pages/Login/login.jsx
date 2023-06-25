@@ -13,7 +13,6 @@ const json = {
 };
 
 const options = {
-    mode: "no-cors",
     method: "POST",
     headers: {
         "Content-Type": "application/json",
