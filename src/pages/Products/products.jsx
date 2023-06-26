@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/ui/Button/Button";
 import ProductCard from "../../components/ui/ProductCard/ProductCard";
 import styles from "./products.module.scss";
-import AuthVeriy from "../../components/utils/AuthVeriy";
+import AuthVeriy from "../../components/utils/AuthVerify";
 
 const Products = () => {
     return (
