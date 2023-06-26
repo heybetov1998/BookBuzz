@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+const proxy = "https://dot-radical-crocodile.glitch.me/";
+
 const useFetch = (url, options) => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
@@ -9,27 +11,19 @@ const useFetch = (url, options) => {
         (async () => {
             setLoading(true);
 
-            let data = null;
+            try {
+                const response = await fetch(proxy + url, options);
+                const data = await response.json();
 
-            if (options)
-                data = await fetch(
-                    `https://cors-anywhere.herokuapp.com/${url}`,
-                    options
-                )
-                    .then((response) => response.json())
-                    .catch((err) => setError(err))
-                    .finally(() => setLoading(false));
-            else
-                data = await fetch(`https://cors-anywhere.herokuapp.com/${url}`)
-                    .then((response) => response.json())
-                    .catch((err) => setError(err))
-                    .finally(() => setLoading(false));
-
-            setData(data);
+                setData(data);
+            } catch (err) {
+                setError(err);
+            } finally {
+                setLoading(false);
+            }
         })();
     }, [url, options]);
 
     return { data, error, loading };
 };
-
 export default useFetch;

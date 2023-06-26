@@ -3,6 +3,16 @@ import ProfilePicture from "../ProfilePicture/ProfilePicture";
 import styles from "./Nav.module.scss";
 
 const Nav = () => {
+    let login = (
+        <li>
+            <CustomLink to="/login">Login</CustomLink>
+        </li>
+    );
+
+    if (localStorage.getItem("token") !== null) {
+        login = null;
+    }
+
     return (
         <nav className={styles.navComponent}>
             <ul className={styles.navigation}>
@@ -16,9 +26,7 @@ const Nav = () => {
                         Cart
                     </CustomLink>
                 </li>
-                <li>
-                    <CustomLink to="/login">Login</CustomLink>
-                </li>
+                {login}
                 <li>
                     <ProfilePicture />
                 </li>

@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container">
                 <div className="d-flex align-items-center">
                     <h1>BookBuzz</h1>
-                    <SearchInput />
+                    <SearchInput id="search" />
                     <Nav />
                 </div>
             </div>
