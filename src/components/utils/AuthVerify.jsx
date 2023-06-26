@@ -1,4 +1,4 @@
-const AuthVeriy = ({ history }) => {
+const AuthVerify = ({ history }) => {
     history.listen(() => {
         const token = JSON.parse(localStorage.getItem("token"));
 
@@ -9,7 +9,7 @@ const AuthVeriy = ({ history }) => {
     return <div>AuthVeriy</div>;
 };
 
-export default AuthVeriy;
+export default AuthVerify;
 
 const parseJwt = (token) => {
     try {
