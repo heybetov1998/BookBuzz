@@ -8,6 +8,7 @@ const InputGroup = ({
     label,
     className = "",
     icon,
+    onKeyUp = () => {},
 }) => {
     return (
         <div className={`${className}`}>
@@ -21,8 +22,10 @@ const InputGroup = ({
                 <input
                     placeholder={placeholder}
                     type={type}
+                    name={id}
                     className="form-control"
                     id={id}
+                    onKeyUp={onKeyUp}
                     aria-describedby={`${id}Help`}
                 />
 

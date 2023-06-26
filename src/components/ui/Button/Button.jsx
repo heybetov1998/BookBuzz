@@ -1,8 +1,11 @@
 import styles from "./Button.module.scss";
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, onclick = () => {} }) => {
     return (
-        <button className={`${styles.buttonComponent} ${className ?? ""}`}>
+        <button
+            onClick={onclick}
+            className={`${styles.buttonComponent} ${className ?? ""}`}
+        >
             {children}
         </button>
     );
