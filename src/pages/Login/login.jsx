@@ -9,11 +9,6 @@ import { useNavigate } from "react-router-dom";
 const proxy = "https://dot-radical-crocodile.glitch.me/";
 const url = "http://bookbuzz.cronhex.com/api/v1/account/login";
 
-// const json = {
-//     email: "bob@bob.xyz",
-//     password: "n0rM@N!",
-// };
-
 const Login = () => {
     let loginForm = <></>;
     const navigate = useNavigate();
