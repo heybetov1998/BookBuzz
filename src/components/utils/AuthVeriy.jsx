@@ -9,7 +9,7 @@ const AuthVeriy = ({ history }) => {
     return <div>AuthVeriy</div>;
 };
 
-export default withRouter(AuthVeriy);
+export default AuthVeriy;
 
 const parseJwt = (token) => {
     try {
